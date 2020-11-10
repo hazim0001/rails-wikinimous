@@ -1,0 +1,8 @@
+<h2>New article</h2>
+<%= form_for @article do |f| %>
+<%= f.label :title %><br>
+<%= f.text_field :title, class:"form-control"%><br>
+<%= f.label :content %><br>
+<%= f.text_area :content, class:"form-control bg-light"%><br>
+<%= f.submit class:"btn btn-primary"%>
+<%end%>

@@ -9,7 +9,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+    <nav class="navbar navbar-light bg-light">
+       <%= link_to 'My Wikinimous app',articles_path,class: "navbar-brand" %>
+        <button class="btn btn-outline-primary"> <%= link_to 'Add new Article', new_article_path %> </button>
+    </nav>
+  <body class="container">
+
     <%= yield %>
   </body>
 </html>
